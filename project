@@ -1,2 +1,5 @@
 #include <iostream>
 using namespace std;
+
+void tampilkanMenu() {
+cout << "Menu Tabungan" << endl;
