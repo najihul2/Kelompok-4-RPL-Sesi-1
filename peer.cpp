@@ -24,7 +24,35 @@ void tarikUang(int &saldo, int jumlah) {
 void lihatSaldo(int saldo) {
     cout << "Saldo anda saat ini: Rp" << saldo << endl;
 }
-    
-    cout << "Pilihan tidak valid!" << endl;
+
+int main() {
+    int saldo = 0;
+    int pilihan, jumlah;
+
+    while(true) {
+        tampilkanMenu();
+        cin >> pilihan;
+
+        switch (pilihan) {
+            case 1:
+            cout << "Masukkan jumlah setor: ";
+            cin >> jumlah;
+            setorUang(saldo, jumlah);
+            break;
+            case 2:
+            cout << "Masukkan jumlah tarik: ";
+            cin >> jumlah;
+            tarikUang(saldo, jumlah);
+            break;
+            case 3:
+            lihatSaldo(saldo);
+            break;
+            case 4:
+            cout << "Terima kasih telah menggunakan program tabungan." << endl;
+            default:
+            cout << "Pilihan tidak valid!" << endl;
+        }
+    }
+
     return 0;
 }
