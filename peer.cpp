@@ -9,6 +9,7 @@ void tampilkanMenu() {
     cout << "4. Keluar" << endl;
     cout << "Pilih menu: ";
     }
+
 void setorUang(int &saldo, int jumlah) {
     saldo += jumlah;
     cout << "Berhasil menyetor Rp" << jumlah << endl;
