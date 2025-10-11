@@ -50,10 +50,9 @@ int main() {
             break;
             case 4:
             cout << "Terima kasih telah menggunakan program tabungan." << endl;
+            return 0;
             default:
             cout << "Pilihan tidak valid!" << endl;
         }
     }
-
-    return 0;
 }
